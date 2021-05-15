@@ -21,8 +21,8 @@ CRUD.createUser({
 }).then(console.log);
 
 CRUD.updateUser(1,{
-    name: 'Daniel',
-    job: 'Developer'
+    name: 'Dorado',
+    job: 'Full Stack'
 }).then(console.log);
 
 CRUD.deleteUser(1).then(console.log);
