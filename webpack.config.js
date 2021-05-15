@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const CSSWebpackPlugin  = require('mini-css-extract-plugin');
 const OptimizeCssPlugin = require('css-minimizer-webpack-plugin');
-const CopyPlugin        = require('copy-webpack-plugin');
+//const CopyPlugin        = require('copy-webpack-plugin');
 
 module.exports = {
 
@@ -44,10 +44,10 @@ module.exports = {
             filename: '[name].[contenthash].css',
             ignoreOrder: false,
         }),
-        new CopyPlugin({
-            patterns: [
-                { from: 'src/assets', to: 'assets/' },
-            ],
-        }),
+        // new CopyPlugin({
+        //     patterns: [
+        //         { from: 'src/assets', to: 'assets/' },
+        //     ],
+        // }),
     ],
 }
