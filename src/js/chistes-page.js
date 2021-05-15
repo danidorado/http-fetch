@@ -9,7 +9,7 @@ const crearChisteHtml = () => {
     
         <h1 class="mt-5">Chuck Norris Jokes</h1>
         <hr>
-        <button class="btn btn-primary">Otro Chiste</button>
+        <button id="add-joke" class="btn btn-primary">Otro Chiste</button>
         <ol class="mt-2 list-group"> </ol>`;
 
     const divChistes = document.createElement('div');
@@ -21,7 +21,7 @@ const crearChisteHtml = () => {
 const eventos = () => {
 
     olList    = document.querySelector('ol');
-    btnChiste = document.querySelector('button');
+    btnChiste = document.querySelector('#add-joke');
 
     btnChiste.addEventListener('click', async() => {
 

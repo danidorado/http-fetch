@@ -1,6 +1,7 @@
 import './css/global.css';
 import {initChistes} from './js/chistes-page';
 import {initUsers} from './js/users-page';
+import {initUpload} from './js/upload-page';
 
 import * as CRUD from './js/crud-user-provider';
 
@@ -10,6 +11,7 @@ import * as CRUD from './js/crud-user-provider';
 
 // getChiste().then(console.log);
 
+initUpload();
 initChistes();
 initUsers();
 
